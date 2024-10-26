@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node14-app:
+    build: 
+      context: ./projet-node14
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    
+  node18-app:
+    build:
+      context: ./projet-node18
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
